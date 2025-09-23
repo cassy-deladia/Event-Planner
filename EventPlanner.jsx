@@ -6,7 +6,11 @@ const EventPlanner = () => {
         <div className="event-planner-container">
             <header>
                 <h1>Welcome to Event Planner</h1>
-                 <p>
+            </header>
+            
+            <section className='Description'>
+                {/*Description of the Event Planner application*/}
+                <p>
                     Plan and organize your events effortlessly with our comprehensive
                     event planning application. Whether you're hosting a small gathering or a large conference, 
                     our tools and features are designed to help you manage every aspect of your event with ease.
@@ -14,25 +18,19 @@ const EventPlanner = () => {
                 <button className='get-started-button'>
                     Get Started
                 </button>
-            </header>
-            <section className='Description'>
-                {/*Description of the Event Planner application*/}
-               
             </section>
                {/*section to list or categorize different types of event */}
             <section className ="events categories"> 
-                <div className='event-box'>
-                    <h2 className='event-title'> Social Events: </h2>
-                </div>
                  {/*events categories goes here*/}
                  <ul>
+                  <h2>Social Events:</h2>  
                   <li>Weddings receptions</li>
                   <li>Birthday Parties</li>
                   <li>Anniversary Celebrations</li>
                   <li>Baby Showers</li>
                   <li>Family Reunions</li>
                   <li>Graduation Parties</li>
-                  <li>Social Events</li>
+                  <li>Family Reunions</li>
                  </ul>
                  
                  <ul>
@@ -40,21 +38,19 @@ const EventPlanner = () => {
                     <li>Concerts</li>
                     <li>Festivals</li>
                     <li>Screanings</li>
-                    <li>Shows</li>
-                    <li>Exhibitions</li>
-                    <li>Events</li>
+                    <li>Comedy Shows</li>
+                    <li>Art Exhibitions</li>
+                    <li>Cultural Events</li>
                  </ul>
                  <ul>
                     <h2>Community Events:</h2>
-                    <li>Fundraisers</li>
+                    <li>Fundraising events</li>
                     <li>Charity Events</li>
                     <li>Volunteer Drives</li>
                     <li>Neighborhood block party</li>
                     <li>Community festivals</li>
                     <li>Cultural Celebrations</li>
-
                  </ul>
-                </div>
             </section>   
              {/*ssection to highlight app features or functionalities*/}
              <section className ="features"> 
@@ -81,8 +77,25 @@ const EventPlanner = () => {
                     <p className='author'> -John Smith</p>
                  </div>
             </section>
-        
+             {/* Section to provide contact information or a contact form */}
+        <section className="contact">
+            {/* Section heading */}
+            <h2>Contact Us</h2>
+            {/* Contact form */}
+            <form>
+                {/* Name input field */}
+                <input type="text" placeholder="Name" />
+                {/* Email input field */}
+                <input type="email" placeholder="Email" />
+                {/* Message textarea */}
+                <textarea placeholder="Message"></textarea>
+                {/* Submit button */}
+                <button className="submit-button">Send</button>
+            </form>
+        </section>
+        </div>        
     );
 };
 
 export default EventPlanner;
+
